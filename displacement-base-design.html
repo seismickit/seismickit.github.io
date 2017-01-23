@@ -79,7 +79,7 @@
   <div id="content">
 
     <!-- main -->
-    <div class="row" id="main" style="width: 100%">
+    <div class="mm-row" id="main" style="width: 100%">
 
       <!-- post -->
       <article>
@@ -104,61 +104,59 @@
           </aside>
         </div>
 
-        <div class="mm-col mm-container m6 l8 app">
+        <div class="mm-col mm-container m6 l8">
+          <div class="app">
 
-          <!-- primary -->
-          <div class="primary" style="padding-left: 10px; padding-right:10px">
+            <!-- primary -->
+            <div class="primary" style="padding-left: 10px; padding-right:10px">
 
-            <h2>Overview</h2>
+              <h2>Overview</h2>
 
-            <p class="post-info">Based on the Direct displacement-based design process</p>
+              <p class="post-info">Based on the Direct displacement-based design process</p>
 
-            <div class="image-section">
-              <img src="images/img-post.jpg" alt="image post" width="100%"/>
-            </div>
-
-
+              <div class="image-section">
+                <img src="images/img-post.jpg" alt="image post" width="100%"/>
+              </div>
 
 
-            <br>
+              <div class="mm-row">
+                <div class="mm-col mm-container m6 l6">
+                  <div class="inputs">
+                    <h3>Inputs</h3>
 
-            <div class="row">
-              <div class="mm-col mm-container m6 l6">
-                <div class="inputs">
-                <h3>Inputs</h3>
-                <p>Explanation</p>
-                <form id="ddbd-calculator" action="" onsubmit="return false;">
+                    <p>Explanation</p>
 
-                  Number of stories:<br>
-                  <input id="stories" type="text" value="5"><br>
-                  Storey seismic mass:<br>
-                  <input id="storey-mass" type="text" value="15"><br>
-                  Storey height:<br>
-                  <input id="storey-height" type="text" value="3.4"><br>
+                    <form id="ddbd-calculator" action="" onsubmit="return false;">
 
-                  <br>
-                  <input type="submit" onclick="calculateDDBD()" value="Submit">
-                </form>
+                      Number of stories:<br>
+                      <input id="stories" type="text" value="5"><br>
+                      Storey seismic mass:<br>
+                      <input id="storey-mass" type="text" value="15"><br>
+                      Storey height:<br>
+                      <input id="storey-height" type="text" value="3.4"><br>
+
+                      <br>
+                      <input type="submit" onclick="calculateDDBD()" value="Submit">
+                    </form>
                   </div>
-              </div>
-              <div class="mm-col mm-container m6 l6">
-                <div class="results">
-
-                <h3> Design summary</h3>
-
-                <div id="ddbd-answers"></div>
-                <p id="base-shear"></p>
-
-                <p id="ductility"></p>
-
-                <p id="base-moment-over-strength"></p>
                 </div>
+                <div class="mm-col mm-container m6 l6">
+                  <div class="results">
 
+                    <h3> Design summary</h3>
+
+                    <div id="ddbd-answers"></div>
+                    <p id="base-shear"></p>
+
+                    <p id="ductility"></p>
+
+                    <p id="base-moment-over-strength"></p>
+                  </div>
+
+                </div>
               </div>
             </div>
-            <br>
-
-            <!-- /primary -->
+            <br />
           </div>
         </div>
 

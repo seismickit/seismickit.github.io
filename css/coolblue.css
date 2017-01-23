@@ -10,6 +10,13 @@
 /* -----------------------------------------------------------------------------
     R E S E T
 ----------------------------------------------------------------------------- */
+/* lightest to darkest
+c1: background: rgb(88, 131, 189);
+c2: background: rgb(54, 103, 169);
+c3: background: rgb(22, 82, 163);
+c4: background: rgb(12, 61, 129);
+c5: background: rgb(7, 47, 102);
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,7 +70,7 @@ html {
 body {
 	font: 15px/24px Georgia, Serif;
 	color: #454545;
-   	background: url(../images/bg.png);
+   	background: white;
 }
 /* Links */
 a:link, a:visited {
@@ -80,7 +87,7 @@ a:link.more, a:visited.more {
 	margin-top: 10px;
 	margin-right: 5px;
 	padding: 6px 10px;
-	border: 1px solid #2177A5;
+	border: 1px solid rgb(12, 61, 129);
 	background-color: #227bad;
 	color: #fff;
     font-size: 13px;
@@ -380,8 +387,9 @@ header {
 
 #sidebar {
     float: right;
-    margin: 45px 0 24px 0;
-    padding: 0;
+    margin: 0px 0 24px 0px;
+    padding: 0 0 0 5px;
+    background-color: rgb(88, 131, 189);
 }
 #extra-wrap {
 	width: 100%;
@@ -798,6 +806,8 @@ footer p.footer-right {
 }
 .primary {
     background-color: whitesmoke;
+    border-radius: 5px;
+
 }
 .primary .image-section {
 	clear: both;
@@ -1157,22 +1167,27 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 
 
 .results{
-  background-color: #1372a8;
-  padding-left: 10px;
+  background-color: rgb(88, 131, 189);
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
-  margin: 0 2px 0 2px;
+  margin: 0 2px 5px 2px;
 
 }
 
 .inputs{
-  background-color: mintcream;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: rgb(88, 131, 189);
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
+  margin: 0 2px 5px 2px;
 
 }
 
 .app{
-  background-color: yellow;
+  background-color: rgb(7, 47, 102);
+  margin: 0 5px 0 5px;
   padding: 5px 5px 5px 5px;  /* top right bottom left */
+}
+
+.row {
+  display: flex; /* equal height of the children */
 }
