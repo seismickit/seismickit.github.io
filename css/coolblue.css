@@ -414,7 +414,6 @@ header {
 }
 footer {
 	clear: both;
-    width: 978px;
 	margin: 0 auto;
     padding-top: 12px;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Sans-Serif;
@@ -613,7 +612,7 @@ header .search button.btn {
 }
 .sidemenu ul li a:link,
 .sidemenu ul li a:visited {
-    color: #33799B;
+    color: white;
     padding: 0;
 	font-weight: bold;
     text-transform: uppercase;
@@ -622,7 +621,7 @@ header .search button.btn {
 }
 .sidemenu ul li a span {
     display: block;
-	color: #858585;
+	color: black;
     font-family: Verdana, Sans-Serif;
 	font-style: normal;
 	font-weight: normal;
@@ -1190,4 +1189,8 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 
 .row {
   display: flex; /* equal height of the children */
+}
+
+.footy {
+  background-color: rgb(7, 47, 102);
 }
