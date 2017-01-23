@@ -244,11 +244,11 @@ td {
 
 /* Form */
 form {
-    width: 500px;
-    margin: 24px 0 24px 0;
-    padding: 32px 40px;
-    background: #E9EAEB;
-    border: 1px solid #DFE1E6;
+    /*width: 500px;*/
+    /*margin: 24px 0 24px 0;*/
+    /*padding: 32px 40px;*/
+    /*background: #E9EAEB;*/
+    /*border: 1px solid #DFE1E6;*/
 
 }
 input, select {
@@ -363,27 +363,25 @@ header {
     width: 100%;
 }
 #content {
-    width: 978px;
     margin: 0 auto;
     padding: 0 0 24px 0;
     background: url(../images/content-bg.png) repeat-y left top;
 }
 #main {
 	float: left;
-    margin: 40px 0 0 0;
+    margin: 1% 0 0 0;
     padding: 0;
-	width: 725px;
+	width: 90%;
 }
 #main .main-content {
-    padding-right: 30px;
-    padding-left: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 #sidebar {
     float: right;
     margin: 45px 0 24px 0;
     padding: 0;
-    width: 222px;
 }
 #extra-wrap {
 	width: 100%;
@@ -799,20 +797,18 @@ footer p.footer-right {
   margin-bottom: 20px;
 }
 .primary {
-    width: 533px;
-    float: right;
-    padding-right: 25px;
+    background-color: whitesmoke;
 }
 .primary .image-section {
 	clear: both;
 	display: block;
 	margin: 15px 0 10px 0;
 	padding: 0;
+  width: 100%;
 }
 
 aside {
     position: relative;
-    width: 135px;
     float: left;
 }
 
@@ -901,19 +897,18 @@ aside .post-meta ul li a:hover { color: #CC3300; }
     margin: 0;
     padding: 0;
 }
-.post-bottom-section .primary form {
-	position: relative;
-	top: 15px; left: 0;
-	margin: 0 0 20px 0;
-    width: 447px;
-}
+/*.post-bottom-section .primary form {*/
+	/*position: relative;*/
+	/*top: 15px; left: 0;*/
+	/*margin: 0 0 20px 0;*/
+/*}*/
 
-.post-bottom-section .primary form #name,
-.post-bottom-section .primary form #email,
-.post-bottom-section .primary form #message,
-.post-bottom-section .primary form #website {
-	width: 425px;
-}
+/*.post-bottom-section .primary form #name,*/
+/*.post-bottom-section .primary form #email,*/
+/*.post-bottom-section .primary form #message,*/
+/*.post-bottom-section .primary form #website {*/
+	/*width: 425px;*/
+/*}*/
 
 /* Post Info */
 .post-info {
@@ -1107,3 +1102,77 @@ ul.archive li .post-details a:hover {
     -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3), inset 0 1px 0 #FF7242;
 }
 
+
+/* Add responsive grid */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* From Nicolas Gallagher & Jonathan Neal git.io/normalize/normalize.css */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+.mm-responsive{overflow-x:auto}
+.mm-container:after,.mm-panel:after,.mm-row:after,.mm-row-padding:after,.mm-topnav:after,.mm-clear:after,.mm-btn-group:before,.mm-btn-group:after,.mm-btn-bar:before,.mm-btn-bar:after
+{content:"";display:table;clear:both}
+.mm-col,.mm-half,.mm-third,.mm-twothird,.mm-threequarter,.mm-quarter{float:left;width:100%}
+.mm-col.s1{width:8.33333%}
+.mm-col.s2{width:16.66666%}
+.mm-col.s3{width:24.99999%}
+.mm-col.s4{width:33.33333%}
+.mm-col.s5{width:41.66666%}
+.mm-col.s6{width:49.99999%}
+.mm-col.s7{width:58.33333%}
+.mm-col.s8{width:66.66666%}
+.mm-col.s9{width:74.99999%}
+.mm-col.s10{width:83.33333%}
+.mm-col.s11{width:91.66666%}
+.mm-col.s12,.mm-half,.mm-third,.mm-twothird,.mm-threequarter,.mm-quarter{width:99.99999%}
+@media only screen and (min-width:601px){
+.mm-col.m1{width:8.33333%}
+.mm-col.m2{width:16.66666%}
+.mm-col.m3,.mm-quarter{width:24.99999%}
+.mm-col.m4,.mm-third{width:33.33333%}
+.mm-col.m5{width:41.66666%}
+.mm-col.m6,.mm-half{width:49.99999%}
+.mm-col.m7{width:58.33333%}
+.mm-col.m8,.mm-twothird{width:66.66666%}
+.mm-col.m9,.mm-threequarter{width:74.99999%}
+.mm-col.m10{width:83.33333%}
+.mm-col.m11{width:91.66666%}
+.mm-col.m12{width:99.99999%}}
+@media only screen and (min-width:993px){
+.mm-col.l1{width:8.33333%}
+.mm-col.l2{width:16.66666%}
+.mm-col.l3,.mm-quarter{width:24.99999%}
+.mm-col.l4,.mm-third{width:33.33333%}
+.mm-col.l5{width:41.66666%}
+.mm-col.l6,.mm-half{width:49.99999%}
+.mm-col.l7{width:58.33333%}
+.mm-col.l8,.mm-twothird{width:66.66666%}
+.mm-col.l9,.mm-threequarter{width:74.99999%}
+.mm-col.l10{width:83.33333%}
+.mm-col.l11{width:91.66666%}
+.mm-col.l12{width:99.99999%}}
+.mm-content{max-width:980px;margin:auto}
+.mm-rest{overflow:hidden}
+.mm-layout-container{display:table;width:100%}.mm-layout-row{display:table-row}.mm-layout-cell,.mm-layout-col{display:table-cell}
+.mm-layout-top{vertical-align:top}.mm-layout-middle{vertical-align:middle}.mm-layout-bottom{vertical-align:bottom}
+
+
+.results{
+  background-color: #1372a8;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 0 2px 0 2px;
+
+}
+
+.inputs{
+  background-color: mintcream;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+
+}
+
+.app{
+  background-color: yellow;
+  padding: 5px 5px 5px 5px;  /* top right bottom left */
+}
